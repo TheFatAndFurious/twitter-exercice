@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledButton = styled.button`
+export const StyledProfileButton = styled.div`
     display: flex;
     cursor: pointer;
     padding: 12px;
@@ -14,9 +14,12 @@ export const StyledButton = styled.button`
     border: none;
     margin-top: 4px;
     margin-bottom: 4px;
+    align-self: flex-end;
+    align-items: center;
+    margin-bottom: 1rem;
 
 
     &:hover {
         background-color: #343434;
     }
-`
+    `
