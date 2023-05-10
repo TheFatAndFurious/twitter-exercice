@@ -7,11 +7,13 @@ export const StyledSubTitle = styled.div`
 
     &:hover {
         background-color: #343434;
-        transition: 0.3s;   
+        transition: 0.3s;  
+        cursor: pointer; 
     }
 
     span {
         padding: 10px 0;
     }
+
 
 `
