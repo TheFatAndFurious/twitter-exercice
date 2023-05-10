@@ -11,5 +11,10 @@ export const TextContainer = styled.div`
         color: white;
         font-size: 16px;
         font-family: "Ubuntu";
+
+        &:focus {
+        outline: none;
+        outline-offset: 0;
+    }
     }
     `

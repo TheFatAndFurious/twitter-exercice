@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledTrends = styled.div`
     width: 350px;
     margin-right: 10px;
-    background-color:blue;
+    border-left: 1px solid #343434;
 
     @media (max-width: 1075px) {
         width: 290px;

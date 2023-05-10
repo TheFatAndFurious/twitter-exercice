@@ -35,12 +35,16 @@ export const StyledFuiteButton = styled.div`
         line-height: 20px;font-weight: 700;
         letter-spacing: 1px;
 
-
-        @media (max-width: 1265px) {
-        display: none;
+        @media(max-width:1265px) {
+            display: none
+        }
+    
     }
-
-    }
+    
+.houdini {
+    display:none;
+}
+    
 
 
 `
