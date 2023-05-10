@@ -4,6 +4,7 @@ import { StyledTrends } from "./styles/StyledTrends"
 import HomeBar from "./HomeBar"
 import Tweet from "./Tweet"
 import { FunctionComponent } from "react"
+import TweetsFeed from "./TweetsFeed"
 
 type MainProps = {
     user: object
@@ -17,6 +18,7 @@ const Main: FunctionComponent<MainProps> = ({user}) => {
             <StyledFeed>
                 <HomeBar />
                 <Tweet user={user}/>
+                <TweetsFeed user={user}/>
             </StyledFeed>
             <StyledTrends>
                 

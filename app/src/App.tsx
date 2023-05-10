@@ -14,7 +14,7 @@ const theme = {
 
 const user = {
   name: "Karim",
-  userName: "The menace",
+  userName: "@The menace",
   image: "https://www.parismatch.com/lmnr/f/webp/r/1144,763,FFFFFF,forcex,center-middle/img/var/pm/public/media/image/2022/03/18/16/1985GettyImagescouv.jpg?VersionId=rLNr_kuza9tM1dI_T1um4ra5Y58ySspK"
 }
 

@@ -9,8 +9,8 @@ const FuiteButton = () => {
     return (
         <StyledButtonLink>
         <StyledFuiteButton>
-            <span>Fuite !</span>
-            <Icon path={faPenNib} />
+            <span>Tweet</span>
+            {/* <Icon path={faPenNib} /> */}
         </StyledFuiteButton>
         </StyledButtonLink>
     )
