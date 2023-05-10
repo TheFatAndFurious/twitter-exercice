@@ -10,7 +10,7 @@ const Avatar: FunctionComponent<ProfileButtonProps> = ({someUrl}) => {
 
     return (
         <StyledAvatar>
-            <img src={someUrl} alt="" />
+            <img src={someUrl}/>
         </StyledAvatar>
     )
 }

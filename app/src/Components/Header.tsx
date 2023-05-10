@@ -5,15 +5,15 @@ import { faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { StyledProfileContainer } from "./styles/StyledProfileContainer"
 import ProfileButton from "./ProfileButton"
 import FuiteButton from "./FuiteButton"
+import { FunctionComponent } from "react"
+
+type HeaderProps = {
+    user: object
+}
+
+const Header: FunctionComponent<HeaderProps> = ({user}) => {
 
 
-const Header = () => {
-
-    const user = {
-        name: "Karim",
-        userName: "The menace",
-        image: "https://www.parismatch.com/lmnr/f/webp/r/1144,763,FFFFFF,forcex,center-middle/img/var/pm/public/media/image/2022/03/18/16/1985GettyImagescouv.jpg?VersionId=rLNr_kuza9tM1dI_T1um4ra5Y58ySspK"
-    }
 
 return (
 
