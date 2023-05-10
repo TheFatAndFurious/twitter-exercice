@@ -6,4 +6,10 @@ img {
     height: 2rem;
 }
 
+.profile {
+    @media (min-width:1265px) {
+        display: none;
+    } 
+}
+
 ` 

@@ -1,7 +1,7 @@
-import { StyledHomeBar } from "./styles/Main/StyledHomeBar";
-import { StyledTitleContainer } from "./styles/Main/StyledTitleContainer";
-import { StyledSubMenu } from "./styles/Main/StyledSubMenu";
-import { StyledSubTitle } from "./styles/Main/StyledSubTitle";
+import { StyledHomeBar } from "./styles/Main/Navbar/StyledHomeBar";
+import { StyledTitleContainer } from "./styles/Main/Navbar/StyledTitleContainer";
+import { StyledSubMenu } from "./styles/Main/Navbar/StyledSubMenu";
+import { StyledSubTitle } from "./styles/Main/Navbar/StyledSubTitle";
 
 
 const HomeBar = () => {

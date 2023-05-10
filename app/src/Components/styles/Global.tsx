@@ -1,7 +1,15 @@
 import { GlobalStyleComponent, createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-    //font
+    
+    @font-face {
+        font-family: "Ubuntu";
+        src: local("Ubuntu"),
+        url("../../fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
+        font-weight: Regular;
+        }
+
+
     * {
         box-sizing: border-box;
         padding: 0;
@@ -11,6 +19,7 @@ const GlobalStyles = createGlobalStyle`
     body {
         background: ${({theme}) => theme.background};
         color: #d6d9db;
+        font-family: "Ubuntu";
     }
 
     img {

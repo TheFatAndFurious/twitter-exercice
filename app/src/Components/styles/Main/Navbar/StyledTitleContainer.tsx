@@ -5,8 +5,10 @@ export const StyledTitleContainer = styled.div`
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
-    padding-bottom: 2px;
-    padding-top: 2px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    span {
+        padding-left: 16px; 
+    }
 `

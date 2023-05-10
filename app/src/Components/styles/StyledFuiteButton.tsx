@@ -6,7 +6,6 @@ export const StyledFuiteButton = styled.div`
     
     display: flex;
     cursor: pointer;
-    padding: 12px;
     border-radius: 9999px;
     max-width: 100%;
     transition-property: background-color, box-shadow;
@@ -24,17 +23,22 @@ export const StyledFuiteButton = styled.div`
     justify-content: center;
     margin-top: 8px;
     
-
+    
     &:hover {
         background-color: #1F75FE;
     }
-
-
+    
+    
     span {
+        padding: 12px;
         font-size: 17px;
         line-height: 20px;font-weight: 700;
-        padding: 4px 0;
         letter-spacing: 1px;
+
+
+        @media (max-width: 1265px) {
+        display: none;
+    }
 
     }
 
