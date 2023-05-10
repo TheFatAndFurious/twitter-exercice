@@ -5,6 +5,9 @@ import { FunctionComponent } from "react";
 import { BodyContainer } from "./styles/Main/Tweet/BodyContainer";
 import TweetEveryOneButton from "./TweetEveryOneButton";
 import TweetTextArea from "./TweetTextArea";
+import TweetEveryoneCanReplyButton from "./TweetEveryOneCanReplyButton";
+import TweetIconsList from "./TweetIconsList";
+import TweetSendContainer from "./TweetSendContainer";
 
 type TweetProps = {
     user: object
@@ -23,7 +26,13 @@ const Tweet: FunctionComponent<TweetProps> = ({user}) => {
                 <TweetEveryOneButton />
             </BodyContainer>
         </StyledTweetContainer>
-                <TweetTextArea / >
+        <TweetTextArea />
+        <TweetEveryoneCanReplyButton />
+        <StyledTweetContainer>
+            <TweetIconsList />
+            <TweetSendContainer/>
+        </StyledTweetContainer>
+
         </>
        
     )
