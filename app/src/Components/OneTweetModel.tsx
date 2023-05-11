@@ -5,12 +5,12 @@ import ProfileName from "./ProfileName";
 import ProfileNickName from "./ProfileNickname";
 import { StyledOneTweetUserInfo } from "./styles/Main/DisplayedTweets/StyledOneTweetUserInfo";
 import { StyledTweetText } from "./styles/Main/DisplayedTweets/StyledTweetText";
-
+import OneTweetIcons from "./OneTweetIcons";
 
 
 
 type OneTweetModelProps = {
-    contenu: string, 
+    contenu: object, 
     user: object
 }
 
@@ -24,8 +24,11 @@ const OneTweetModel: FunctionComponent<OneTweetModelProps>  = ({contenu, user}) 
                 <ProfileNickName nickname={user.userName}/>
             </StyledOneTweetUserInfo>
             <StyledTweetText>
-            <span>{contenu}</span>
+            <span>{contenu.texte}</span>
+            <img src={contenu.image}/>
             </StyledTweetText>
+            <OneTweetIcons/>
+
         </StyledOneTweetModel>
     )
 }

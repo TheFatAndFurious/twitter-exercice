@@ -7,6 +7,7 @@ import { FunctionComponent } from "react"
 import TweetsFeed from "./TweetsFeed"
 import SearchBar from "./SearchBar"
 import Trends from "./Trends"
+import TopMain from "./TopMain"
 
 type MainProps = {
     user: object
@@ -18,8 +19,7 @@ const Main: FunctionComponent<MainProps> = ({user}) => {
     return (
         <StyledMain>
             <StyledFeed>
-                <HomeBar />
-                <Tweet user={user}/>
+                <TopMain user={user}/>
                 <TweetsFeed user={user}/>
             </StyledFeed>
             <StyledTrends>

@@ -12,6 +12,6 @@ export const StyledOneTweetUserInfo = styled.div`
     }
 
     span {
-        margin-right: 12px;
+        margin-right: 6px;
     }
 `

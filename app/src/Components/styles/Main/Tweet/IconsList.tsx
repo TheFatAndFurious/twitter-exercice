@@ -6,6 +6,7 @@ export const IconsList = styled.u`
     list-style: none;
     display: flex;
     margin-top: 10px;
+    padding-bottom: 12px;
 
     li {
         margin-right: 25px;

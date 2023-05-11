@@ -8,7 +8,6 @@ import TweetTextArea from "./TweetTextArea";
 import TweetEveryoneCanReplyButton from "./TweetEveryOneCanReplyButton";
 import TweetIconsList from "./TweetIconsList";
 import TweetSendContainer from "./TweetSendContainer";
-import TextDisplay from "./TweetTextDisplay";
 
 type TweetProps = {
     user: object
@@ -33,9 +32,7 @@ const Tweet: FunctionComponent<TweetProps> = ({user}) => {
             <TweetIconsList />
             <TweetSendContainer/>
         </StyledTweetContainer>
-
         </>
-       
     )
 }
 
