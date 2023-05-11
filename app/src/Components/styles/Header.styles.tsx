@@ -18,9 +18,10 @@ export const Nav = styled.div`
     flex-direction: column;
     `
 
-export const Logo = styled.img`
-    `
+
 
 export const List = styled.ul`
-    list-style: none`
+    list-style: none;`
+
+
     

@@ -6,6 +6,10 @@ import { StyledProfileContainer } from "./styles/StyledProfileContainer"
 import ProfileButton from "./ProfileButton"
 import FuiteButton from "./FuiteButton"
 import { FunctionComponent } from "react"
+import Icon from "./FontawesomeIcon"
+import { Link } from "./styles/Link.style"
+import Logo from "./Logo"
+
 
 type HeaderProps = {
     user: object
@@ -20,7 +24,7 @@ return (
     <StyledHeader>
         <Nav >
             <List>
-                <Button name={""} path={faTwitter}/>
+                <Logo />
                 <Button name="Home" path={faHouseUser}/>
                 <Button name="Explore" path={faHashtag}/>
                 <Button name="Notifications"path={faBell}/>
