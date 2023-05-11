@@ -11,17 +11,20 @@ export const StyledHeader = styled.div`
 export const Nav = styled.div`
     position: fixed;
     top: 0;
-    width: 275px;
+    height: 100vh;
     padding-right: 8px;
     padding-left: 8px;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     `
 
 
 
 export const List = styled.ul`
-    list-style: none;`
+    list-style: none;
+    margin-left: 10px;
+    `
 
 
     

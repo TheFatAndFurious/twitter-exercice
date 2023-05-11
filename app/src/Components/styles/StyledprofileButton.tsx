@@ -17,9 +17,14 @@ export const StyledProfileButton = styled.div`
     align-self: flex-end;
     align-items: center;
     margin-bottom: 1rem;
+    justify-self: end;
 
 
     &:hover {
         background-color: #343434;
+    }
+
+    @media(max-width: 1265px) {
+        margin-left: 12px;
     }
     `

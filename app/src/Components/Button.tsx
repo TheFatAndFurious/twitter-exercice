@@ -21,6 +21,7 @@ type ButtonProps = {
  ************/
 
 const Button: FunctionComponent<ButtonProps> = ({name, path}) => {
+
     return (
 
         <Link>

@@ -9,5 +9,5 @@ export const StyledTrends = styled.div`
     }
 
     @media (max-width: 988px) {
-        display: none;
+        display: none;}
 `

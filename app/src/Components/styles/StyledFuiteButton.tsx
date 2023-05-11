@@ -7,8 +7,7 @@ export const StyledFuiteButton = styled.div`
     display: flex;
     cursor: pointer;
     border-radius: 9999px;
-    max-width: 100%;
-    transition-property: background-color, box-shadow;
+    /*max-width: 100%;*/
     transition-duration: 0.2s;
     font-size: 15px;
     background: black;
@@ -32,7 +31,8 @@ export const StyledFuiteButton = styled.div`
     span {
         padding: 12px;
         font-size: 17px;
-        line-height: 20px;font-weight: 700;
+        line-height: 20px;
+        font-weight: 700;
         letter-spacing: 1px;
 
         @media(max-width:1265px) {
@@ -41,9 +41,6 @@ export const StyledFuiteButton = styled.div`
     
     }
     
-.houdini {
-    display:none;
-}
     
 
 
