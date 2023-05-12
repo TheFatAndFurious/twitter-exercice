@@ -20,7 +20,7 @@ const Tweet: FunctionComponent<TweetProps> = ({user}) => {
         <>
         <StyledTweetContainer>
             <PictureContainer>
-            <Avatar someUrl={user.image}/>
+            <Avatar someUrl={user.user1.image}/>
             </PictureContainer>
             <BodyContainer>
                 <TweetEveryOneButton />

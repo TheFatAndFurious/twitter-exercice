@@ -1,19 +1,17 @@
 import { StyledProfileButton } from "./styles/StyledprofileButton";
 import { FunctionComponent } from "react";
-import Icon from "./FontawesomeIcon";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import Avatar from "./Avatar";
 import ProfileName from "./ProfileName";
 import ProfileNickName from "./ProfileNickname";
 import { StyledTextContainer } from "./styles/ProfileButton/StyledTextContainer";
 import { StyledContainerProfile } from "./styles/ProfileButton/StyledContainerProfile"; 
+import FollowButton from "./FollowButton";
 
 type ProfileButtonProps = {
     user: object,
-    path: IconProp
 }
 
-const ProfileButton: FunctionComponent<ProfileButtonProps> = ({user, path}) => {
+const ProfilesToFollowButton: FunctionComponent<ProfileButtonProps> = ({user}) => {
 
  return (
 
@@ -24,10 +22,10 @@ const ProfileButton: FunctionComponent<ProfileButtonProps> = ({user, path}) => {
                 <ProfileName name={user.user1.name} />
                 <ProfileNickName nickname={user.user1.userName}/>
             </StyledTextContainer>
-            <Icon path={path} />
+                <FollowButton/>
             </StyledContainerProfile>
         </StyledProfileButton>
     )
 }
 
-export default ProfileButton
+export default ProfilesToFollowButton

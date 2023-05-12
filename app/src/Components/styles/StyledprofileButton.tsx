@@ -18,6 +18,7 @@ export const StyledProfileButton = styled.div`
     align-items: center;
     margin-bottom: 1rem;
     justify-self: end;
+    margin-top: 10px;
 
 
     &:hover {

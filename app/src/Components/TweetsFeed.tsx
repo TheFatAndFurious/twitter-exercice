@@ -21,13 +21,13 @@ const contenu = {
     return (
         <StyledDisplayedContainer>
             <OneTweetContainer>
-                <OneTweetModel contenu={contenu} user={user}/>
+                <OneTweetModel contenu={contenu} user={user.user1}/>
             </OneTweetContainer>
             <OneTweetContainer>
-                <OneTweetModel contenu={contenu} user={user}/>
+                <OneTweetModel contenu={contenu} user={user.user2}/>
             </OneTweetContainer>
             <OneTweetContainer>
-                <OneTweetModel contenu={contenu} user={user}/>
+                <OneTweetModel contenu={contenu} user={user.user3}/>
             </OneTweetContainer>
         </StyledDisplayedContainer>
     )

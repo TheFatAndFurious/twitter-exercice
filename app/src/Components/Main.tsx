@@ -8,6 +8,7 @@ import TweetsFeed from "./TweetsFeed"
 import SearchBar from "./SearchBar"
 import Trends from "./Trends"
 import TopMain from "./TopMain"
+import WhotToFollow from "./WhoToFollow"
 
 type MainProps = {
     user: object
@@ -25,6 +26,7 @@ const Main: FunctionComponent<MainProps> = ({user}) => {
             <StyledTrends>
                 <SearchBar/>
                 <Trends />
+                <WhotToFollow user={user}/>
             </StyledTrends>
 
 
