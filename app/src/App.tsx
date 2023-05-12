@@ -25,7 +25,7 @@ const user = {
   }, 
   user3: {
     name: "Mila",
-    user: "@chickenAintMeat",
+    userName: "@chickenAintMeatAnyway",
     image: "https://upload.wikimedia.org/wikipedia/en/0/05/Elmer_in_Rabbit_Fire_%281951%29.png"
 
   }
