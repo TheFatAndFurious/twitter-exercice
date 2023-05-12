@@ -1,9 +1,25 @@
 {
   "private": true,
   "scripts": {
-    "dev": "yarn workspaces run dev"
+    "build": "concurrently \"yarn build:app\" \"yarn build:api\"",
+    "start": "concurrently \"yarn start:app\" \"yarn start:api\"",
+    "dev": "concurrently \"yarn dev:app\" \"yarn dev:api\"",
+    "lint": "concurrently \"yarn lint:app\" \"yarn lint:api\"",
+    "build:app": "yarn workspace app run build",
+    "build:api": "yarn workspace api run build",
+    "start:app": "yarn workspace app run start",
+    "start:api": "yarn workspace api run start",
+    "dev:app": "yarn workspace app run dev",
+    "dev:api": "yarn workspace api run dev",
+    "lint:app": "yarn workspace app run lint",
+    "lint:api": "yarn workspace api run lint"
   },
   "workspaces": [
-    "app"
-  ]
+    "app",
+    "api"
+  ],
+  "packageManager": "yarn@3.5.1",
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
 }
