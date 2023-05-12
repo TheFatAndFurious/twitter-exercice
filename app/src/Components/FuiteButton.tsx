@@ -1,5 +1,5 @@
 import { StyledButtonLink } from "./styles/StyledButtonLink";
-import { StyledFuiteButton } from "./styles/StyledFuiteButton";
+import { StyledFuiteButton } from "./styles/Header/StyledFuiteButton";
 import { faPenNib } from "@fortawesome/free-solid-svg-icons";
 import { FunctionComponent, useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

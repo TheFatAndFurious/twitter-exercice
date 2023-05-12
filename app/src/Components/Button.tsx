@@ -1,10 +1,10 @@
 import { FunctionComponent } from "react"
 import { Link } from "./styles/Link.style"
-import { StyledButton } from "./styles/StyledButton"
+import { StyledButton } from "./styles/Header/StyledButton"
 import { StyledButtonLink } from "./styles/StyledButtonLink"
 import Icon from "./FontawesomeIcon"
 import { IconProp } from "@fortawesome/fontawesome-svg-core"
-import { StyledName } from "./styles/StyledName"
+import { StyledName } from "./styles/Header/StyledName"
 
 type ButtonProps = {
     name: string,

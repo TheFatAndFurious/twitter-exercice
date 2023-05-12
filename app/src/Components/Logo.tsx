@@ -2,7 +2,7 @@ import { Link } from "./styles/Link.style";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import Icon from "./FontawesomeIcon";
 import { StyledButtonLink } from "./styles/StyledButtonLink";
-import { StyledLogoContainer } from "./styles/StyledLogoContainer";
+import { StyledLogoContainer } from "./styles/Header/StyledLogoContainer";
 
 
 

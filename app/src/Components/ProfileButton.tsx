@@ -1,4 +1,4 @@
-import { StyledProfileButton } from "./styles/StyledprofileButton";
+import { StyledProfileButton } from "./styles/Header/StyledprofileButton";
 import { FunctionComponent } from "react";
 import Icon from "./FontawesomeIcon";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";

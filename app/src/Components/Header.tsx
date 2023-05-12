@@ -1,13 +1,10 @@
-import { StyledHeader, Nav, List } from "./styles/Header.styles"
+import { StyledHeader, Nav, List } from "./styles/Header/Header.styles"
 import Button from "./Button"
 import { faHouseUser, faHashtag, faBell, faEnvelope, faList, faBookmark, faCheck, faUser, faEllipsis } from "@fortawesome/free-solid-svg-icons"
-import { faTwitter } from "@fortawesome/free-brands-svg-icons"
-import { StyledProfileContainer } from "./styles/StyledProfileContainer"
+import { StyledProfileContainer } from "./styles/Header/StyledProfileContainer"
 import ProfileButton from "./ProfileButton"
 import FuiteButton from "./FuiteButton"
 import { FunctionComponent } from "react"
-import Icon from "./FontawesomeIcon"
-import { Link } from "./styles/Link.style"
 import Logo from "./Logo"
 
 
