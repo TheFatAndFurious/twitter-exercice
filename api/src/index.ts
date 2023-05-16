@@ -45,6 +45,12 @@ let tweets = [
         user: 2,
         body: "Bow down before your king ya shits",
         image: 'IllCrushYourSoulToo'
+    }, 
+    {
+        id: 3,
+        user: 3,
+        body: "The road is mine",
+        image: "whateverURL"
     }
 ]
 
