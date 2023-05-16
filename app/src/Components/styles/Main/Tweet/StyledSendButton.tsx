@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledSendButton = styled.div`
+export const StyledSendButton = styled.button`
     background-color: rgb(30, 144, 255);
     width: 90px;
     height: 38px;
@@ -12,9 +12,18 @@ export const StyledSendButton = styled.div`
     justify-content: center;
     cursor: pointer;
     margin-right: 24px;
+    border: none;
+    transition-duration: 0.2s;
 
-
-    span {
-        font-weight: 600;
+    &:hover {
+        background-color: #1F75FE;
     }
-    `
+
+    &:disabled {
+        background-color: grey
+    }
+
+`
+export const StyledSpan = styled.span`
+    font-weight: 800;
+    font-size: 15px`

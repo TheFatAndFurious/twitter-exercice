@@ -1,5 +1,7 @@
 import { createContext } from "react";
 
+
+
 export interface User {
     userName: string;
     id: number;
@@ -24,5 +26,6 @@ const AppContext = createContext<AppContextType>({
     users: [],
     tweets: []
 })
+
 
 export default AppContext

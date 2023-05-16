@@ -11,10 +11,12 @@ import { StyledTweetText } from "./styles/Main/DisplayedTweets/StyledTweetText";
 import OneTweetIcons from "./OneTweetIcons";
 
 const TweetsFeed: FunctionComponent = () => {
+  
   const { users, tweets } = useContext(AppContext);
-
+  
   const sortedTweets = [...tweets].sort((a,b) =>b.id - a.id)
-
+  
+  
   return (
     <StyledDisplayedContainer>
       {sortedTweets.map((tweet) => {
