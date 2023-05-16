@@ -1,0 +1,21 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Kazim",
+            "userName": "@LeMichelinDuKebab"
+        },
+        {
+            "id": 2,
+            "name": "Alexandre",
+            "userName": "@CSSisMyLife"
+        },
+        {
+
+            "id": 3,
+            "name": "Mila",
+            "userName": "@ChickenAintMeatAnyway"
+        }
+    ]
+}
+

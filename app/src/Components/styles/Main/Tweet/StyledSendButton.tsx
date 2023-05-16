@@ -10,6 +10,7 @@ export const StyledSendButton = styled.div`
     color: white;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 
 
     span {
