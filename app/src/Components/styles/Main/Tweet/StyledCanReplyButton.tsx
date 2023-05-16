@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledCanReplyButton = styled.button`
     border: none;
     margin: 16px; 
+    margin-left: 75px;
     background-color: black;
     color: rgb(29, 155, 240);
     font-weight: 700;

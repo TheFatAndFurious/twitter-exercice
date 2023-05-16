@@ -22,7 +22,13 @@ let users = [    {
         id: 3,
         name: "Mila",
         userName: "@chickenAintMeatAnyway", 
-        image: "https://upload.wikimedia.org/wikipedia/en/0/05/Elmer_in_Rabbit_Fire_%281951%29.png"
+        image: "https://imgr.cineserie.com/2019/01/un-spin-off-feminin-de-fast-amp-furious-en-developpement.jpg?imgeng=/f_jpg/cmpr_0/w_700/h_380/m_cropbox&ver=1"
+    },
+    {
+        id: 4,
+        name: "Alexandre",
+        userName: "@loveCSS",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
     }
     ]
 

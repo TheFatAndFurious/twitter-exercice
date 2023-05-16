@@ -12,10 +12,13 @@ import AppContext from "./AppContext";
 type OneTweetModelProps = {
     contenu: object, 
     user: object, 
-    tweets:object
+    
 }
 
-const OneTweetModel: FunctionComponent<OneTweetModelProps>  = ({contenu, user, tweets}) => {
+const OneTweetModel: FunctionComponent<OneTweetModelProps>  = ({contenu, user}) => {
+
+
+    const { users, tweets } = useContext(AppContext);
 console.log("🚀 ~ file: OneTweetModel.tsx:19 ~ tweets:", tweets)
 
 
@@ -28,8 +31,7 @@ console.log("🚀 ~ file: OneTweetModel.tsx:19 ~ tweets:", tweets)
                 <ProfileNickName nickname={user.userName}/>
             </StyledOneTweetUserInfo>
             <StyledTweetText>
-            <span>{contenu.body}</span>
-            <img src={contenu.image}/>
+            <span>{tweets[0].body}</span>
             </StyledTweetText>
             <OneTweetIcons/>
 

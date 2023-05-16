@@ -34,7 +34,8 @@ const Tweet: FunctionComponent<TweetProps> = ({user}) => {
                 throw new Error("erreur lors de l'envoi du tweet")
             }
 
-            setBody("")
+            setBody("");
+            window.location.reload();
         } catch (error) {
             console.error(error)
         }

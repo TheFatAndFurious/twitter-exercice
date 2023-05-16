@@ -11,6 +11,7 @@ export const StyledSendButton = styled.div`
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    margin-right: 24px;
 
 
     span {
