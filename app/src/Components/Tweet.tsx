@@ -1,7 +1,7 @@
 import { StyledTweetContainer } from "./styles/Main/Tweet/StyledTweetContainer";
 import { PictureContainer } from "./styles/Main/Tweet/PictureContainer";
 import Avatar from "./Avatar";
-import { FunctionComponent, createContext, useState } from "react";
+import React, { FunctionComponent, createContext, useState } from "react";
 import { BodyContainer } from "./styles/Main/Tweet/BodyContainer";
 import TweetEveryOneButton from "./TweetEveryOneButton";
 import TweetIconsList from "./TweetIconsList";
@@ -14,6 +14,9 @@ import axios from "axios";
 
 
 
+
+
+
 type TweetProps = {
     user: object
 }
@@ -22,6 +25,7 @@ const Tweet: FunctionComponent<TweetProps> = ({user}) => {
 
     const [body, setBody] = useState("");
     const [isLoading, setIsLoading] = useState(false)
+    const [newTweet, setNewtweet] = useState(false)
 
 
     const handleClick = async () => {
@@ -35,17 +39,15 @@ const Tweet: FunctionComponent<TweetProps> = ({user}) => {
         }
         setBody("");
         setIsLoading(false)
+        setNewtweet(true);
       };
 
     const handleTextAreaChange = (event) => {
         setBody(event.target.value);
     }
 
-    return (
-        <>
-       {!isLoading ? (
+    return (       
        <>
-      
        <StyledTweetContainer>
             <PictureContainer>
             <Avatar someUrl={user.user1.image}/>
@@ -76,10 +78,9 @@ const Tweet: FunctionComponent<TweetProps> = ({user}) => {
         </StyledTweetContainer>
         </>
         )
-        : (<h1>page is loading</h1>
-        )}
-        </>
-    )
-}
+        
+        }
+    
+
 
 export default Tweet;
