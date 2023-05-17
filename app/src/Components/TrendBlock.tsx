@@ -1,21 +1,22 @@
-import { StyledTrendBlock, StyledTrendCat, StyledKeyword, StyledTrendNum } from "./styles/Main/Trending/StyledTrendBlock"
+import { useContext } from "react";
+import AppContext from "./AppContext";
+import {
+  StyledTrendBlock,
+  StyledTrendCat,
+  StyledKeyword,
+  StyledTrendNum,
+} from "./styles/Main/Trending/StyledTrendBlock";
 
 const TrendBlock = () => {
+  const { trends } = useContext(AppContext);
 
+  return trends.map((trend) => (
+    <StyledTrendBlock key={trend.id}>
+      <StyledTrendCat>Trending in {trend.location}</StyledTrendCat>
+      <StyledKeyword>#{trend.title}</StyledKeyword>
+      <StyledTrendNum>{trend.number}k</StyledTrendNum>
+    </StyledTrendBlock>
+  ));
+};
 
-    return (
-        <StyledTrendBlock>
-            <StyledTrendCat>
-                Trending in France
-            </StyledTrendCat>
-            <StyledKeyword>
-                #Mathieu porte des perruques
-            </StyledKeyword>
-            <StyledTrendNum>
-                250k
-            </StyledTrendNum>
-        </StyledTrendBlock>
-    )
-}
-
-export default TrendBlock
+export default TrendBlock;

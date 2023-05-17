@@ -4,12 +4,13 @@ import Header from "./Components/Header";
 import { Container } from "./Components/styles/Container.styles";
 import Main from "./Components/Main";
 import { useEffect, useState } from "react";
-import AppContext, { Tweet, User } from "./Components/AppContext";
-import { fetchTweets, fetchUsers } from "./Components/api";
+import AppContext, { Tweet, User, Trends } from "./Components/AppContext";
+import { fetchTweets, fetchUsers, fetchTrends } from "./Components/api";
 
 function App() {
   const [users, setUsers] = useState<User[]>([]);
   const [tweets, setTweets] = useState<Tweet[]>([]);
+  const [trends, setTrends] = useState<Trends[]>([]);
 
   useEffect(() => {
     fetchUsers()
@@ -19,6 +20,10 @@ function App() {
     fetchTweets()
       .then((data) => setTweets(data))
       .catch((error) => console.error("erreur"));
+
+    fetchTrends()
+      .then((data) => setTrends(data))
+      .catch((error) => console.error("erratum"));
   }, []);
 
   const theme = {
@@ -50,7 +55,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <>
-        <AppContext.Provider value={{ users, tweets, setTweets }}>
+        <AppContext.Provider value={{ users, tweets, setTweets, trends }}>
           <GlobalStyles />
           <Container>
             <Header user={user} />

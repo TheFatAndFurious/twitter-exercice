@@ -25,3 +25,16 @@ export const fetchTweets = async () => {
     throw new Error("erreur lors de la recuperation des tweets");
   }
 };
+
+export const fetchTrends = async () => {
+  try {
+    const response = await fetch("http://localhost:3000/trends");
+    if (!response.ok) {
+      throw new Error("les trends n'ont pas pu etre recuperes");
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    throw new Error("les trends n'ont pas pu etre recuperes");
+  }
+};

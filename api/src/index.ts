@@ -54,6 +54,81 @@ let tweets = [
     }
 ]
 
+const randomTrendNum = Math.ceil(Math.random()*100);
+
+
+
+
+let trends = [
+    {
+        id: 1,
+        location: "France",
+        title: "Nouvelle tendance capillaire",
+        number: randomTrendNum
+    },    
+    {
+        id: 2,
+        location: "Perou",
+        title: "Recette originale de quinoa",
+        number: randomTrendNum
+    },
+    {
+        id: 3,
+        location: "France",
+        title: "Moment gênant capturé",
+        number: randomTrendNum
+    },
+    {
+        id: 4,
+        location: "USA",
+        title: "Entraînement express",
+        number: randomTrendNum
+    },
+    {
+        id: 5,
+        location: "Japon",
+        title: "Café à chats populaire",
+        number: randomTrendNum
+    },
+    {
+        id: 6,
+        location: "Allemagne",
+        title: "Mobilité électrique moderne",
+        number: randomTrendNum
+    },
+    {
+        id: 7,
+        location: "Australie",
+        title: "Paradis du surf",
+        number: randomTrendNum
+    },
+    {
+        id: 8,
+        location: "Espagne",
+        title: "Saveurs de la paella",
+        number: randomTrendNum
+    },
+    {
+        id: 9,
+        location: "Brésil",
+        title: "Carnaval de Rio en chiffres",
+        number: randomTrendNum
+    },
+    {
+        id: 10,
+        location: "France",
+        title: "Nouvelle collection automne-hiver",
+        number: randomTrendNum
+    },
+    {
+        id: 11,
+        location: "Inde",
+        title: "Yoga pour le bien-être",
+        number: randomTrendNum
+    }
+];
+
+
 
 
 const app = express();
@@ -70,6 +145,11 @@ app.use((req, res, next) => {
 //route pour recuperer tous les tweets
 app.get('/tweets/', (req, res) => {
     return res.json(tweets)
+})
+
+//route pour recuperer les trends
+app.get('/trends', (req, res)=> {
+    return res.json(trends)
 })
 
 //route pour recuperer les users

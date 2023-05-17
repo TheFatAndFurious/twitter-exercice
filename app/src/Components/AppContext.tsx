@@ -15,15 +15,24 @@ export interface Tweet {
   image: string;
 }
 
+export interface Trend {
+  id: number;
+  location: string;
+  title: string;
+  number: number;
+}
+
 type AppContextType = {
   users: User[];
   tweets: Tweet[];
+  trends: Trend[];
   setTweets: React.Dispatch<React.SetStateAction<Tweet[]>>;
 };
 
 const AppContext = createContext<AppContextType>({
   users: [],
   tweets: [],
+  trends: [],
   setTweets: () => {},
 });
 
