@@ -19,7 +19,6 @@ const Main: FunctionComponent<MainProps> = ({user}) => {
         <StyledMain>
             <StyledFeed>
                 <TopMain user={user}/>
-                <TweetsFeed />
             </StyledFeed>
             <StyledTrends>
                 <SearchBar/>

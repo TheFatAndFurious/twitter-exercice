@@ -99,7 +99,7 @@ app.post('/test', (req, res) => {
 
 //route pour effacer un tweet
 app.delete('/delete/:id', (req, res) => {
-    const tweetToDelete = +req.params.id;
+    const tweetToDelete = +req.params.id - 1;
     tweets.splice(tweetToDelete, 1)
     res.json(tweets)
 })
